@@ -1,0 +1,219 @@
+body {
+	background: #ecf0f1;
+}
+
+.hideme {
+	display: none;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-white {
+	color: white;
+}
+
+.ifont {
+	font-size: 20px;
+	font-family: Jenson, Bembo, Palatino !important;
+	font-weight: bolder;
+}
+
+.ifont-text {
+	color: #00e3ff;
+	font-weight: bolder;
+	font-size: 55px;
+}
+
+.descfont {
+	font-family: Jenson, Bembo, Palatino;
+}
+
+.container-footer {
+	bottom: 0px;
+	margin-top: 100px;
+	background-color: #050f2c;
+	height: 100px;
+	color: white;
+	text-align: center;
+}
+
+.coverpage {
+	text-align: center;
+	color: white;
+	background: #0B1724;
+	background-image:
+		url(http://groupsone.com/public/images/bg-docsearch.jpg);
+	background-size: cover;
+	margin-top: 60px;
+	padding: 50px 0 80px 0;
+	border: none;
+}
+
+.cutebox {
+	text-align: center;
+	box-shadow: 0px 0px 17px 1px #888888;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	height: 300px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+}
+
+.container-inner-overlay {
+	margin-top: 100px !important;
+	box-shadow: 0px 0px 17px 1px #888888;
+	background-color: white;
+	padding: 50px;
+	padding-top: 5px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.overlaybox {
+	text-align: center;
+	box-shadow: 0px 0px 17px 1px #888888;
+	background-color: white;
+	padding: 10px;
+	padding-bottom: 30px;
+	border-radius: 5px;
+	margin-bottom: 50px;
+	font-family: Jenson, Bembo, Palatino !important;
+}
+
+.overlaybox-regular {
+	box-shadow: 0px 0px 17px 1px #888888;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.cutebox-heading {
+	/* color: #802008; */
+	font-weight: bold;
+}
+
+.cutebox:hover {
+	box-shadow: 0px 0px 17px 3px #888888;
+}
+
+.row-bottom-10 {
+	margin-bottom: 15px;
+}
+
+.row-up-20 {
+	margin-top: -20px;
+}
+
+.row-50 {
+	margin-top: 50px;
+}
+
+.row-25 {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.row-bottom-25 {
+	margin-bottom: 25px;
+}
+
+.jumbotron-inner {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.feature-box {
+	background-color: #ecf0f5;
+	border-radius: 6px;
+	padding: 14px;
+	position: relative;
+	text-align: center;
+}
+
+.bounceIn {
+	-webkit-animation-name: bounceIn;
+	-moz-animation-name: bounceIn;
+	-o-animation-name: bounceIn;
+	animation-name: bounceIn;
+}
+
+.container-lightgreen {
+	
+}
+
+.container-inner {
+	margin-top: 100px !important;
+}
+
+.navbar-default {
+	background-color: #0e4377 !important;
+}
+
+.row-30 {
+	width: 30%;
+}
+
+.margin-30 {
+	margin-top: 30px;
+}
+
+.margin-40 {
+	margin-top: 40px;
+}
+
+
+.margin-10 {
+	margin-top: 10px;
+}
+
+.margin-left-2 {
+	margin-left: 2px;
+}
+
+.margin-top-2 {
+	margin-top: 2px;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 70px;
+	width: 100%;
+}
+
+.handmouse {
+	cursor: pointer;
+}
+
+/* IE 6 */
+* html #footer {
+	position: absolute;
+	top: expression(( 0 -( footer.offsetHeight)+(document.documentElement.clientHeight?
+		
+		
+		
+		
+		
+		 document.documentElement.clientHeight: document.body.clientHeight)+(ignoreMe=
+		
+		
+		
+		
+		
+		 document.documentElement.scrollTop? document.documentElement.scrollTop:
+		
+		
+		
+		
+		
+		 document.body.scrollTop))+'px');
+}

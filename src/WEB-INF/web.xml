@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+	<description>MySQL Connector</description>
+	<resource-ref>
+		<description>DB Connection</description>
+		<res-ref-name>jdbc/GroupsOne</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+	<welcome-file-list>
+		<welcome-file>pages/index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>GroupList</servlet-name>
+		<servlet-class>com.groupme.groups.GroupServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GroupList</servlet-name>
+		<url-pattern>/groups/*</url-pattern>
+		<url-pattern>/groups/</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SearchGroups</servlet-name>
+		<servlet-class>com.groupme.search.SearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchGroups</servlet-name>
+		<url-pattern>/search/*</url-pattern>
+		<url-pattern>/search/</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GroupRedirect</servlet-name>
+		<servlet-class>com.groupme.groups.GroupRedirector</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GroupRedirect</servlet-name>
+		<url-pattern>/join/*</url-pattern>
+		<url-pattern>/join/</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ExploreGroups</servlet-name>
+		<jsp-file>/pages/ExploreGroups.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExploreGroups</servlet-name>
+		<url-pattern>/explore</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GetGroupDetails</servlet-name>
+		<jsp-file>/pages/group.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetGroupDetails</servlet-name>
+		<url-pattern>/group/*</url-pattern>
+		<url-pattern>/group/</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AddGroup</servlet-name>
+		<jsp-file>/pages/AddGroup.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddGroup</servlet-name>
+		<url-pattern>/share</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>GroupApi</servlet-name>
+		<servlet-class>com.groupme.groups.GroupsApiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GroupApi</servlet-name>
+		<url-pattern>/api/groups/*</url-pattern>
+		<url-pattern>/api/groups/</url-pattern>
+	</servlet-mapping>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/pages/error.jsp</location>
+	</error-page>
+
+	<servlet>
+		<servlet-name>MSMaterial</servlet-name>
+		<jsp-file>/pages/msmaterial.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MSMaterial</servlet-name>
+		<url-pattern>/MSMaterial</url-pattern>
+		<url-pattern>/msmaterial</url-pattern>
+
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>MaterialCollection</servlet-name>
+		<jsp-file>/pages/materialcollection.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MaterialCollection</servlet-name>
+		<url-pattern>/MaterialCollection</url-pattern>
+		<url-pattern>/materialcollection</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GreMockExams</servlet-name>
+		<jsp-file>/pages/gremockexams.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GreMockExams</servlet-name>
+		<url-pattern>/GreMockExams</url-pattern>
+		<url-pattern>/gremockexams</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AskGroup</servlet-name>
+		<jsp-file>/pages/askgroup.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AskGroup</servlet-name>
+		<url-pattern>/AskGroup</url-pattern>
+		<url-pattern>/askgroup</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>JoinGroup</servlet-name>
+		<jsp-file>/pages/joingroup.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>JoinGroup</servlet-name>
+		<url-pattern>/JoinGroup</url-pattern>
+		<url-pattern>/joingroup</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
